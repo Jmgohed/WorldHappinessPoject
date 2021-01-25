@@ -25,28 +25,32 @@ colnames(EnvironHappiness_File)
 # Test Assumptions
 ## Test for Linearity
 scatter.smooth(x=EnvironHappiness_File$EconomyGDP, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is linear
 scatter.smooth(x=EnvironHappiness_File$Family, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is linear
 scatter.smooth(x=EnvironHappiness_File$HealthLifeExpectancy, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is linear
 scatter.smooth(x=EnvironHappiness_File$Freedom, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is nonlinear
 scatter.smooth(x=EnvironHappiness_File$TrustGovernmentCorruption, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is nonlinear
 scatter.smooth(x=EnvironHappiness_File$Generosity, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is nonlinear
 scatter.smooth(x=EnvironHappiness_File$DystopiaResidual, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is nonlinear
 scatter.smooth(x=EnvironHappiness_File$DrinkingWater, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is linear????
 scatter.smooth(x=EnvironHappiness_File$SanitizationServices, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is linear????
 scatter.smooth(x=EnvironHappiness_File$Doctors, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is nonlinear
 scatter.smooth(x=EnvironHappiness_File$NurseMidwife, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
-
+### is nonlinear
 scatter.smooth(x=EnvironHappiness_File$CleanFuelTech, y=EnvironHappiness_File$HappinessScore, main="Happiness Score by ...")
+### is linear
+
+
+#---------------------
 
 
 
